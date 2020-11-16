@@ -1,0 +1,61 @@
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 64px;
+}
+
+.counter__minus, .counter__plus {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 1px solid #838383;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+.counter__minus:before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 4px;
+  width: 5px;
+  height: 1px;
+  background-color: #838383;
+}
+
+.counter__plus {
+  &:before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 4px;
+    width: 5px;
+    height: 1px;
+    background-color: #838383;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 4px;
+    width: 5px;
+    height: 1px;
+    background-color: #838383;
+    transform: rotate(90deg);
+  }
+}
+
+
+.counter__number {
+  width: 22px;
+  height: 14px;
+  padding: 0;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}

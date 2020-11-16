@@ -1,0 +1,96 @@
+.page-header {
+  padding: 0 16px 0 16px;
+}
+
+.page-header__wrap {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1172px;
+    margin: 0 auto;
+  }
+
+  .page-header__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-header__logo {
+    display: flex;
+    margin-right: 74px;
+  }
+
+  .page-header__address {
+    position: relative;
+    @include clean;
+    margin-right: 146px;
+    font-size: 13px;
+    line-height: 13px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: -18px;
+      bottom: 0;
+      width: 11px;
+      height: 16px;
+      background-image: url("../img/maps-and-flags.png");
+    }
+  }
+
+  .page-header__email {
+    position: relative;
+    @include clean;
+    margin-right: 77px;
+    font-size: 13px;
+    line-height: 13px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: -20px;
+      bottom: 0;
+      width: 12px;
+      height: 9px;
+      background-image: url("../img/envelope.png");
+    }
+  }
+
+  .page-header__wrapper {
+    margin-right: 30px;
+  }
+
+  .page-header__phone {
+    @include clean;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+
+  .page-header__hours {
+    @include clean;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: normal;
+  }
+
+  .page-header__back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 172px;
+    height: 38px;
+    color: #1fba0a;
+    border: 1px solid #1fba0a;
+    border-radius: 5px;
+
+    &:hover {
+      color: $white;
+      background-color: #1fba0a;
+      border-color: $white;
+      transition: 0.3s;
+    }
+  }
+}

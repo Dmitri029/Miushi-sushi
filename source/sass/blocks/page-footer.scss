@@ -1,0 +1,15 @@
+.page-footer {
+  background-color: #1a2d34;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 76px;
+  }
+
+  .page-footer__wrap {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}

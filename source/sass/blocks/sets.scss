@@ -1,0 +1,27 @@
+.sets {
+  width: 100%;
+  margin-bottom: 72px;
+}
+
+.sets__slider {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .sets {
+    margin-bottom: 62px;
+  }
+
+  .sets__slider {
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sets {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+}

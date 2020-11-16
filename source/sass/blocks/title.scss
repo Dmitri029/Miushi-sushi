@@ -1,0 +1,78 @@
+.title {
+  position: relative;
+  @include clean;
+  display: block;
+  width: 137px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+  font-size: 44px;
+  line-height: 44px;
+  font-family: "Lemon tuesday", serif;
+  color: $navy-blue;
+  font-weight: normal;
+  text-align: center;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    right: 145px;
+    width: 74px;
+    height: 27px;
+    background-image: url("../img/title-left.png");
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 145px;
+    width: 74px;
+    height: 27px;
+    background-image: url("../img/title-right.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    width: 144px;
+    font-size: 48px;
+    line-height: 48px;
+
+    &:before {
+      right: 171px;
+      width: 86px;
+      height: 32px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &:after {
+      left: 171px;
+      width: 86px;
+      height: 32px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    width: 177px;
+    font-size: 60px;
+    line-height: 60px;
+
+    &:before {
+      right: 204px;
+      width: 109px;
+      height: 40px;
+    }
+
+    &:after {
+      left: 204px;
+      width: 109px;
+      height: 40px;
+    }
+  }
+}

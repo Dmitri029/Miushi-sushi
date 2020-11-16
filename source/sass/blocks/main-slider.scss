@@ -1,0 +1,224 @@
+.main-slider {
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.main-slider__wrap {
+  .main-slider__dot {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid #c2c2c2;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
+
+  .main-slider__dots {
+    padding-top: 13px;
+    text-align: center;
+
+    .active {
+      background-color: #1fba0a;
+      border-color: #1fba0a;
+    }
+  }
+}
+
+.main-slider__slide {
+  width: 100%;
+  height: 240px;
+  padding: 38px 78px 62px 15px;
+  background-image: url("../img/slider-bg-mobile.jpg");
+  background-color: #3a2c3c;
+  background-size: cover;
+  background-position: center center;
+}
+
+.main-slider__btn {
+  display: none;
+}
+
+.main-slider__title {
+  @include clean;
+  margin-bottom: 20px;
+  font-size: 49px;
+  line-height: 49px;
+  font-family: "Lemon tuesday", serif;
+  color: $light-green;
+}
+
+.main-slider__hours {
+  @include clean;
+  color: $white;
+  font-size: 12px;
+  line-height: 12px;
+  font-style: italic;
+}
+
+.main-slider__discount {
+  position: absolute;
+  right: 21px;
+  top: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 67px;
+  height: 67px;
+  background-color: #c82024;
+  border-radius: 50%;
+}
+
+.main-slider__discount-text {
+  @include clean;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  color: $white;
+}
+
+.main-slider__discount-percent {
+  @include clean;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-slider {
+    margin-bottom: 60px;
+  }
+
+  .main-slider__slide {
+    display: flex;
+    align-items: start;
+    height: 420px;
+    padding: 60px 242px 60px 15px;
+    background-image: url("../img/slider-bg-tablet.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .main-slider__slide-wrap {
+    width: 331px;
+    margin-right: 68px;
+  }
+
+  .main-slider__title {
+    margin-bottom: 34px;
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .main-slider__hours {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 32px;
+  }
+
+  .main-slider__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 188px;
+    height: 56px;
+    background-color: $orange;
+    color: $white;
+    text-transform: uppercase;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $white;
+      color: $orange;
+      transition: 0.5s;
+    }
+  }
+
+  .main-slider__discount {
+    position: static;
+    width: 90px;
+    height: 90px;
+  }
+
+  .main-slider__discount-text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .main-slider__discount-percent {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .main-slider__wrap {
+    .main-slider__dot {
+      width: 15px;
+      height: 15px;
+      padding: 0;
+      border-radius: 50%;
+      border: 1px solid #c2c2c2;
+      background-color: transparent;
+
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+
+    .main-slider__dots {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      margin-left: -47px;
+      padding-top: 0;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-slider {
+    margin-bottom: 86px;
+  }
+
+  .main-slider__wrap {
+    width: 1140px;
+    margin: 0 auto;
+  }
+
+  .main-slider__slide {
+    height: 676px;
+    padding: 130px 401px 150px 15px;
+    background-image: url("../img/slider-bg-tablet.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .main-slider__slide-wrap {
+    width: 509px;
+    margin-right: 72px;
+  }
+
+  .main-slider__title {
+    margin-bottom: 45px;
+    font-size: 110px;
+    line-height: 110px;
+  }
+
+  .main-slider__hours {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 60px;
+  }
+
+  .main-slider__btn {
+    width: 246px;
+    height: 56px;
+  }
+}

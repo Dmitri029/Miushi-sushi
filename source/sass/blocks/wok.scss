@@ -1,0 +1,27 @@
+.wok {
+  width: 100%;
+  margin-bottom: 72px;
+}
+
+.wok__slider {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .wok {
+    margin-bottom: 62px;
+  }
+
+  .wok__slider {
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wok {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+}

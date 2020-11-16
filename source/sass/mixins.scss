@@ -1,0 +1,9 @@
+@mixin clean() {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin clean-list() {
+  @include clean;
+  list-style: none;
+}

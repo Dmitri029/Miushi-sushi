@@ -1,0 +1,137 @@
+.review {
+  max-width: 400px;
+  padding: 24px 12px 26px 12px;
+  border: 1px solid #e6e6e6;
+}
+
+.review__icon {
+  float: left;
+}
+
+.review__name {
+  @include clean;
+  padding-left: 32%;
+  padding-top: 16px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  color: #5e81a7;
+}
+
+.review__date {
+  @include clean;
+  padding-left: 32%;
+  margin-bottom: 50px;
+  color: #999999;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+}
+
+.review__text {
+  @include clean;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.review__image {
+  margin-bottom: 36px;
+}
+
+.review__control {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  margin-bottom: 18px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.review__like {
+  width: 18px;
+  height: 15px;
+  margin-right: 20px;
+  background-image: url("../img/like.png");
+  cursor: pointer;
+}
+
+.review__comment {
+  position: relative;
+  padding-left: 22px;
+  margin-right: 20px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  color: #5e81a7;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/comment.png");
+    cursor: pointer;
+  }
+}
+
+.review__share {
+  width: 15px;
+  height: 14px;
+  background-image: url("../img/share.png");
+  cursor: pointer;
+}
+
+.review__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  background-color: #5e81a7;
+  border-radius: 3px;
+  color: $white;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+
+  .vk {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    border: 1px solid #5e81a7;
+    color: #5e81a7;
+    background-color: $white;
+    transition: 0.3s;
+
+    .vk {
+      fill: #5e81a7;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review{
+    max-width: none;
+    width: 48%;
+    padding: 44px 46px 48px 46px;
+  }
+
+  .review__name {
+    padding-left: 30%;
+  }
+
+  .review__date {
+    padding-left: 30%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review{
+    width: 360px;
+  }
+}
